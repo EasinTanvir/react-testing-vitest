@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import UserList from "./components/UserList";
 import Account from "./components/Account";
+import CheckButton from "./components/CheckButton";
+import ShowTitle from "./components/ShowTitle";
+import TruncateText from "./components/TruncateText";
 
 const user = [
   {
@@ -25,7 +28,11 @@ const App = () => {
     <div>
       <>
         <UserList user={user} />
+
         <Account user={data} />
+        <CheckButton />
+        <ShowTitle />
+        <TruncateText text="My name is Easin! Who are you My name is Easin! Who are you" />
       </>
     </div>
   );
