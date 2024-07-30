@@ -3,8 +3,8 @@ import { describe, it, expect } from "vitest";
 import { screen, render } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 import userEvent from "@testing-library/user-event";
-import ShowTitle from "../components/ShowTitle";
-import TruncateText from "../components/TruncateText";
+import ShowTitle from "../src/components/ShowTitle";
+import TruncateText from "../src/components/TruncateText";
 
 describe("TruncateText Components", () => {
   it("should display the text when the length is less than 10", () => {

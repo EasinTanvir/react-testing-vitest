@@ -2,7 +2,7 @@ import React from "react";
 import { describe, it, expect } from "vitest";
 import { screen, render } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
-import CheckButton from "../components/CheckButton";
+import CheckButton from "../src/components/CheckButton";
 import userEvent from "@testing-library/user-event";
 
 describe("Check Button Component", () => {

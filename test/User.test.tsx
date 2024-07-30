@@ -2,7 +2,7 @@ import React from "react";
 import { describe, it, expect } from "vitest";
 import { screen, render } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
-import UserList from "../components/UserList";
+import UserList from "../src/components/UserList";
 
 let data = [
   {

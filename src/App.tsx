@@ -4,6 +4,10 @@ import Account from "./components/Account";
 import CheckButton from "./components/CheckButton";
 import ShowTitle from "./components/ShowTitle";
 import TruncateText from "./components/TruncateText";
+import SearchBox from "./components/SearchBox";
+import TagList from "./components/TagList";
+import DataFetch from "./dataFetch/DataFetch";
+import FetchDetails from "./dataFetch/FetchDetails";
 
 const user = [
   {
@@ -28,11 +32,14 @@ const App = () => {
     <div>
       <>
         <UserList user={user} />
-
         <Account user={data} />
         <CheckButton />
         <ShowTitle />
         <TruncateText text="My name is Easin! Who are you My name is Easin! Who are you" />
+        <SearchBox onChange={(data) => console.log(data)} />
+        <TagList />
+        <DataFetch />
+        <FetchDetails id={1} />
       </>
     </div>
   );
